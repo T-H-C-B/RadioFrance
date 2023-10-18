@@ -161,7 +161,6 @@ for data in data_list:
         else:
             print(f"Error {r.status_code} for {data.last_name}")
 
-        # Append data to the CSV immediately
         append_to_csv('personnality_with_country.csv', data)
     except Exception as e:
         print(f"Exception occurred while processing {data.last_name}. Error: {e}")
